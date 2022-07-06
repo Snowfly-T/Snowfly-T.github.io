@@ -16,15 +16,15 @@
   <meta name="author" content="Snowflyt">
   <meta name="keywords" content="">
   
-    <meta name="description" content="异常处理是个非常悠久的话题。最初并不存在异常处理，惯常的方式是像C一样，通过不同的返回值标记函数运行的状态。各种语言中常见的返回-1表示不存在的indexOf方法，就是这种方式的遗留。 后来人们发觉，为了代码的健壮性，很多时候需要在C语言代码中加入大量的if…elseif…判断返回状态，以处理各种各样的错误。于是异常处理出现了，它的目的是将处理异常的代码挪到另一处，而在其他地方不用进行各种复杂的返">
+    <meta name="description" content="我承认这标题起得不怎么样。“适合学习”的语言，什么叫做“学习”？如果是为了工作考虑，Java当然值得学习。但这里的“学习”并不是“适合工作”的概念，而是指为整个计算机领域认知体系打下良好基础的“学习”。甚至可以说Java是适合任何一个计算机类专业本科生学习的语言，尤其是软件工程专业。 近年来，我们似乎常常听到“Java将要没落了”，而且Java的市场份额的确不再增长了。很多人对Java的第一印象就">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一些关于异常的思考">
-<meta property="og:url" content="http://example.com/2022/06/07/%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8E%E5%BC%82%E5%B8%B8%E7%9A%84%E6%80%9D%E8%80%83/index.html">
+<meta property="og:title" content="Snowflyt的博客">
+<meta property="og:url" content="http://example.com/2022/06/29/%E6%88%91%E6%9C%89%E6%97%B6%E6%84%9F%E5%88%B0Java%E6%98%AF%E4%B8%80%E9%97%A8%E9%80%82%E5%90%88%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%AF%AD%E8%A8%80/index.html">
 <meta property="og:site_name" content="Snowflyt的博客">
-<meta property="og:description" content="异常处理是个非常悠久的话题。最初并不存在异常处理，惯常的方式是像C一样，通过不同的返回值标记函数运行的状态。各种语言中常见的返回-1表示不存在的indexOf方法，就是这种方式的遗留。 后来人们发觉，为了代码的健壮性，很多时候需要在C语言代码中加入大量的if…elseif…判断返回状态，以处理各种各样的错误。于是异常处理出现了，它的目的是将处理异常的代码挪到另一处，而在其他地方不用进行各种复杂的返">
+<meta property="og:description" content="我承认这标题起得不怎么样。“适合学习”的语言，什么叫做“学习”？如果是为了工作考虑，Java当然值得学习。但这里的“学习”并不是“适合工作”的概念，而是指为整个计算机领域认知体系打下良好基础的“学习”。甚至可以说Java是适合任何一个计算机类专业本科生学习的语言，尤其是软件工程专业。 近年来，我们似乎常常听到“Java将要没落了”，而且Java的市场份额的确不再增长了。很多人对Java的第一印象就">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-06-07T06:55:34.000Z">
-<meta property="article:modified_time" content="2022-06-07T07:08:29.098Z">
+<meta property="article:published_time" content="2022-06-29T13:17:45.000Z">
+<meta property="article:modified_time" content="2022-07-06T07:59:20.838Z">
 <meta property="article:author" content="Snowflyt">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -32,7 +32,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>一些关于异常的思考 - Snowflyt的博客</title>
+  <title>Snowflyt的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -195,7 +195,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="一些关于异常的思考"></span>
+            <span id="subtitle" data-typed-text=""></span>
           
         </div>
 
@@ -206,8 +206,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-06-07 14:55" pubdate>
-          2022年6月7日 下午
+        <time datetime="2022-06-29 21:17" pubdate>
+          2022年6月29日 晚上
         </time>
       </span>
     
@@ -275,21 +275,18 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">一些关于异常的思考</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body">
               
-              <p>异常处理是个非常悠久的话题。最初并不存在异常处理，惯常的方式是像C一样，通过不同的返回值标记函数运行的状态。各种语言中常见的返回-1表示不存在的indexOf方法，就是这种方式的遗留。</p>
-<p>后来人们发觉，为了代码的健壮性，很多时候需要在C语言代码中加入大量的if…elseif…判断返回状态，以处理各种各样的错误。于是异常处理出现了，它的目的是将处理异常的代码挪到另一处，而在其他地方不用进行各种复杂的返回值判断，只需要抛出异常即可。</p>
-<p>异常处理最初并不源于某个特定的编程语言，而是源于早期的一批操作系统。异常处理真正被加入编程语言中的时间，已经很难追溯，但从现在看来，较早加入异常的语言之一是C++。尽管如此，C++社区当时主要还是维持着从C留下来的习惯，C++的异常处理时常为人不屑一顾。异常处理真正被编译器集成，应当源于Java。</p>
-<p>Java带来了检查型异常，方法将抛出哪些异常都必须在定义时便说明，这使得编译器就可以对异常进行检查，以实现更为健壮的代码。</p>
-<p>然而人们逐渐发现，在一些情况下，大量的try…catch…嵌套并没有减少代码量，反而看起来比C语言返回状态的方式还冗长得多。而Java的检查型异常更令人难以忍受，尤其是当异常的数量多到一定程度时，许多人宁愿写个空的catch块把异常无视也不乐意去进行处理。同时，异常在程序规模增大时似乎并没有很好地使代码更加健壮，因为人们在异常检查上花费了太多的时间，而这些时间本可以节约下来进行更多的单元测试，这能达到同样的目的。</p>
-<p>然后我们看到，很多函数式语言并不存在异常，它们使用Either来处理类似的问题。Either是个有些特别的数据结构，它近似于<code>Either[left, right]</code>，只包含两个值。当函数出错时，就返回<code>Either[error, null]</code>，左值为异常，右值为空，否则返回<code>Either[null, result]</code>，左值为空，右值为结果。这样一来，就不需要try…catch…块的嵌套，一切变得非常清晰。</p>
-<p>……好吧，这其实回到了原点。Either看起来很好，其实和C语言惯常的返回状态本质上没什么区别。异常的出现就是为了在编写程序的过程中尽可能不考虑可能出现的错误，然后将处理错误的程序独立到单独的代码块中。要使用Either，就需要对每个返回值进行判断，这并没有解决问题。</p>
-<p>而在一些语言中，干脆既不需要Either，也不需要异常。例如Go，函数直接返回两个值，前者是结果，后者是错误，每次使用返回值时都检查一遍是否存在错误（即第二个返回值是否为空）。又如Node.js，其标准库中最初的一批函数全部返回两个值，区别只是第一个是错误，第二个是结果。可以看到，它们显然也没有解决什么问题，还是像最初C语言的思路一样。</p>
-<p>Go的错误处理方式令许多人感到厌恶，因其近乎是强制性地需要程序员每次都考虑错误。而Python就显得友好，你可以当作异常不存在——直到你遇到它。</p>
-<p>但是异常真的那么重要？在TDD模式下，足够的测试似乎已经涵盖了异常，加入大量模板代码处理异常，甚至像Java使用编译器检查异常，似乎只是在做重复工作。Python这样动态的一门语言，仍然能够使用Django开发大型网站后端，只要有足够完善的测试。</p>
-<p>我们是如此厌恶异常，但又不得不处理异常，正如我们总是一团乱麻的生活一样。</p>
+              <p>我承认这标题起得不怎么样。“适合学习”的语言，什么叫做“学习”？如果是为了工作考虑，Java当然值得学习。但这里的“学习”并不是“适合工作”的概念，而是指为整个计算机领域认知体系打下良好基础的“学习”。甚至可以说Java是适合任何一个计算机类专业本科生学习的语言，尤其是软件工程专业。</p>
+<p>近年来，我们似乎常常听到“Java将要没落了”，而且Java的市场份额的确不再增长了。很多人对Java的第一印象就是“啰嗦”，冗长得让人看着就犯恶心。写Java代码确实不是一件让人十分愉快的事情，你不得不编写大量的模板代码，然后将真正的代码逻辑放在一系列既定的框架之中。程序员热爱自由，但Java背叛了程序员。</p>
+<p>看看那些“现代”语言吧：Python、Kotlin、Swift、Ruby、JavaScript（ES6之后）……这里说的“现代”当然不是说它们的出现时间都很近，而是指它们在近些年才开始被广泛使用且备受好评。这些语言无论具体语法如何，都是注重简洁灵活的，程序员可以按照自己喜好的方式编写代码，使用各种不同的方式实现同一种功能。而Java则显得太臃肿、太死板，大多数程序员实现同一种功能都会写出几乎一模一样的代码。</p>
+<p>然而我们看到，任何一本被以“设计模式”作为标题的书，只要标题中没有明确说明使用的是哪门语言，就几乎必然使用Java。在如此多主流语言中，Java是唯一一门完全面向对象的语言，它直接而丑陋地将类结构暴露给用户，而这恰恰造就了以Java作为开发语言的项目往往有着很好的框架结构。Java强迫你以框架的方式思考代码结构，熟悉了Java开发流程后，构建一套自洽的类结构几乎是潜意识行为。大量的工厂类和访问器/修改器方法使Java写起来臃肿不堪，但这也使得Java是最容易用类图描述的主流语言。</p>
+<p>“设计模式本质上是为了弥补语言设计时的缺陷。”这句话是非常正确的。若Java中也能自由地将函数当作一等公民对待，那么工厂模式几乎没有任何存在价值。如果Java在语法层面上直接支持访问器与修改器，那么任何以get和set开头的丑陋方法也将不复存在。</p>
+<p>但我们也看到，一门语言的语法越灵活，代码呈现的个人风格也就越强。历史上认为Java语法丑陋而试图简化它的尝试有很多，Groovy、Scala、Kotlin……但它们都只在一些特定领域取代了Java的功能，Scala在大数据处理上获得了一定的成功（Spark），Kotlin在安卓UI开发上获得了成功，而更多语言则死去了，例如目前应用范围几乎只在Gradle配置文件的Groovy。理论上来说，这些替代品都有能力直接对接Java生态，用Scala、Kotlin甚至Clojure实际上都可以写Spring，但现实中这么做的人少之又少。归根结底，Java在目前的实践中仍是最适合团队后端开发的语言。在有少数几个架构师掌控全局的情况下，Java代码的生命周期是很长的。而这些更加灵活的替代性语言更适合小团队或是单人开发……但这种情况下为什么还要用Java生态？</p>
+<p>工程化有两个方向，一种是像Go一样追求极致的简单，一种是像Java一样追求极致的结构化，即使这会使得代码臃肿不堪。而在大学中教学的目的不单单是为了工程，更重要的是教会学生通过系统化方式组织代码的知识，在这种情况下，Java就成了几乎唯一的选择。无怪乎当今高校理论书籍中的示例代码要么是用于演示底层逻辑的C，要么就是Java。</p>
+<p>Java不会在可见的未来死去——即使它是对程序员精神的背叛。</p>
 
               
             </div>
@@ -306,8 +303,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>一些关于异常的思考</div>
-      <div>http://example.com/2022/06/07/一些关于异常的思考/</div>
+      <div></div>
+      <div>http://example.com/2022/06/29/我有时感到Java是一门适合学习的语言/</div>
     </div>
     <div class="license-meta">
       
@@ -319,7 +316,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年6月7日</div>
+          <div>2022年6月29日</div>
         </div>
       
       
@@ -349,18 +346,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/06/29/%E6%88%91%E6%9C%89%E6%97%B6%E6%84%9F%E5%88%B0Java%E6%98%AF%E4%B8%80%E9%97%A8%E9%80%82%E5%90%88%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%AF%AD%E8%A8%80/" title="">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/05/29/Rhyme%E2%80%94%E2%80%94%E5%9C%A8%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80%E8%AE%BE%E8%AE%A1%E4%B8%8A%E7%9A%84%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95/" title="Rhyme——在程序语言设计上的一次尝试">
-                        <span class="hidden-mobile">Rhyme——在程序语言设计上的一次尝试</span>
+                      <a href="/2022/06/07/%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8E%E5%BC%82%E5%B8%B8%E7%9A%84%E6%80%9D%E8%80%83/" title="一些关于异常的思考">
+                        <span class="hidden-mobile">一些关于异常的思考</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
