@@ -16,15 +16,15 @@
   <meta name="author" content="Snowflyt">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Rhyme是我设想中的一门新语言，它现在还没有一个可用的编译器实现，也仍有许多内容处于设计阶段。Rhyme的初步设想是编译成JavaScript实现，这可能被称为RhymeScript，这也许会在未来几年被实现。我试图将一些我认为很有趣的新想法加入到这一实验性语言中。当然，目前这一想法仅停留于自娱自乐阶段，很多东西非常不严谨，所以也不用太过严肃。 我这里不会详细描述Rhyme的每一个部分，只是简单">
+    <meta name="description" content="Rhyme——在程序语言设计上的一次尝试Rhyme是我设想中的一门新语言，它现在还没有一个可用的编译器实现，也仍有许多内容处于设计阶段。Rhyme的初步设想是编译成JavaScript实现，这可能被称为RhymeScript，这也许会在未来几年被实现。我试图将一些我认为很有趣的新想法加入到这一实验性语言中。当然，目前这一想法仅停留于自娱自乐阶段，很多东西非常不严谨，所以也不用太过严肃。 我这里不会">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Rhyme——在程序语言设计上的一次尝试">
 <meta property="og:url" content="https://snowfly-t.github.io/2022/05/29/Rhyme%E2%80%94%E2%80%94%E5%9C%A8%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80%E8%AE%BE%E8%AE%A1%E4%B8%8A%E7%9A%84%E4%B8%80%E6%AC%A1%E5%B0%9D%E8%AF%95/index.html">
 <meta property="og:site_name" content="Snowflyt的博客">
-<meta property="og:description" content="Rhyme是我设想中的一门新语言，它现在还没有一个可用的编译器实现，也仍有许多内容处于设计阶段。Rhyme的初步设想是编译成JavaScript实现，这可能被称为RhymeScript，这也许会在未来几年被实现。我试图将一些我认为很有趣的新想法加入到这一实验性语言中。当然，目前这一想法仅停留于自娱自乐阶段，很多东西非常不严谨，所以也不用太过严肃。 我这里不会详细描述Rhyme的每一个部分，只是简单">
+<meta property="og:description" content="Rhyme——在程序语言设计上的一次尝试Rhyme是我设想中的一门新语言，它现在还没有一个可用的编译器实现，也仍有许多内容处于设计阶段。Rhyme的初步设想是编译成JavaScript实现，这可能被称为RhymeScript，这也许会在未来几年被实现。我试图将一些我认为很有趣的新想法加入到这一实验性语言中。当然，目前这一想法仅停留于自娱自乐阶段，很多东西非常不严谨，所以也不用太过严肃。 我这里不会">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-29T08:28:53.000Z">
-<meta property="article:modified_time" content="2022-06-20T13:16:47.221Z">
+<meta property="article:modified_time" content="2022-07-06T08:26:23.013Z">
 <meta property="article:author" content="Snowflyt">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -279,7 +279,7 @@
             
             <div class="markdown-body">
               
-              <p>Rhyme是我设想中的一门新语言，<strong>它现在还没有一个可用的编译器实现</strong>，也仍有许多内容处于设计阶段。Rhyme的初步设想是编译成JavaScript实现，这可能被称为RhymeScript，这也许会在未来几年被实现。我试图将一些我认为很有趣的新想法加入到这一实验性语言中。当然，目前这一想法仅停留于自娱自乐阶段，很多东西非常不严谨，所以也不用太过严肃。</p>
+              <h1 id="Rhyme——在程序语言设计上的一次尝试"><a href="#Rhyme——在程序语言设计上的一次尝试" class="headerlink" title="Rhyme——在程序语言设计上的一次尝试"></a>Rhyme——在程序语言设计上的一次尝试</h1><p>Rhyme是我设想中的一门新语言，<strong>它现在还没有一个可用的编译器实现</strong>，也仍有许多内容处于设计阶段。Rhyme的初步设想是编译成JavaScript实现，这可能被称为RhymeScript，这也许会在未来几年被实现。我试图将一些我认为很有趣的新想法加入到这一实验性语言中。当然，目前这一想法仅停留于自娱自乐阶段，很多东西非常不严谨，所以也不用太过严肃。</p>
 <p>我这里不会详细描述Rhyme的每一个部分，只是简单提出几点我个人认为很有趣（当然不一定实用的设计），写在这里自娱自乐一下。</p>
 <h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p>为了直观起见，先贴一点示例（自然是跑不起来的，因为目前这门语言只存在于想象中）：</p>
 <h2 id="核心设计思路"><a href="#核心设计思路" class="headerlink" title="核心设计思路"></a>核心设计思路</h2><ul>
